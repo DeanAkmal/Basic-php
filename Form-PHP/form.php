@@ -10,7 +10,7 @@
 <body>
     <div class="container">
     <div class="flex justify-center">
-    <h1 class="mb-4 text-4xl font-extrabold">Buat Account Baru</h1><br>
+    <h1 class="mb-4 text-xl font-extrabold">Buat Account Baru</h1><br>
     </div>
     <div class="flex justify-center">
     <br>
@@ -37,9 +37,9 @@
     <label class="text-xl">Languange Spoken</label>
     <div class="max-w-48" >
         <br>
-        <input type="checkbox"  class="checkbox checkbox-xs" name="bahasa1" value="Bahasa Indonesia"> Bahasa Indonesia <br>
-        <input type="checkbox"  class="checkbox checkbox-xs" name="bahasa2" value="Bahasa Inggris"> Bahasa Inggris <br>
-        <input type="checkbox"  class="checkbox checkbox-xs" name="bahasa3" value="Bahasa Cina"> Bahasa Cina <br><br>
+        <input type="checkbox"  class="checkbox checkbox-xs" name="bahasa[]" value="Bahasa Indonesia"> Bahasa Indonesia <br>
+        <input type="checkbox"  class="checkbox checkbox-xs" name="bahasa[]" value="Bahasa Inggris"> Bahasa Inggris <br>
+        <input type="checkbox"  class="checkbox checkbox-xs" name="bahasa[]" value="Bahasa Cina"> Bahasa Cina <br><br>
     </div>
 
         <label for="Bio">Bio</label><br><br>    

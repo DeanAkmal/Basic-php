@@ -8,6 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <?php
+        $Bahasa = $_POST ['bahasa']
+    ?>
     <h1 class ="text-4xl">SELAMAT DATANG!!!!</h1><br>
     <table class="border-collapse border border-slate-400">
         <tr>
@@ -30,10 +33,8 @@
         
         <tr>
             <td class="border border-slate-400">
-                <?php echo "Bahasa Utama: " ?>
-                <?php echo $_POST['bahasa1'];?>
-                <?php echo $_POST['bahasa2'];?>
-                <?php echo $_POST['bahasa3'];?>         
+                <?php echo "Bahasa Utama: " . (is_array($Bahasa) ? implode(", ", $Bahasa) : $Bahasa); ?>
+                        
             </td>
         </tr>
 
