@@ -4,40 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
-    <h1>Buat Account Baru</h1>
-    <h2>Sign up Form</h2>
-    
+    <div class="container">
+    <div class="flex justify-center">
+    <h1 class="mb-4 text-4xl font-extrabold">Buat Account Baru</h1><br>
+    </div>
+    <div class="flex justify-center">
+    <br>
     <form method="POST" action="hasil.php">    
     <label for="Fname">First name : </label>
-    <input type="text" id="Fname" name="Fname" required><br><br>
+    <input type="text" placeholder = "Type here" class="input input-bordered input-sm w-full max-w-xs" id="Fname" name="Fname" required><br><br>
     <label for="Lname">Last name : </label>
-    <input type="text" id="Lname" name="Lname" required ><br><br>
+    <input type="text" placeholder = "Type here" class="input input-bordered input-sm w-full max-w-xs" id="Lname" name="Lname" required ><br><br>
 
-    <label for="gender">Gender</label><br><br>
+    <label class="text-xl">Gender</label><br><br>
     <td>   
-    <input type="radio" name ="gender" value = "cowo" > Cowok 
-    <input type="radio" name = "gender" value = "cewek"> Cewek 
+    <input type="radio" name ="gender" value = "Cowo" > Cowok 
+    <input type="radio" name = "gender" value = "Cewek"> Cewek 
     </td>
     <br><br>
 
-    <label for="Negara">Nationality</label><br><br>
-    <select name="Negara" id="Negara" required >
+    <label class="text-xl">Nationality</label><br><br>
+    <select name="Negara" class="select select-bordered w-full max-w-xs" id="Negara" required >
         <option value="Indonesia">Indonesia</option>
         <option value="Amrik">Amrik</option>
         <option value="Cina">Cina</option>
+    </select> <br><br>
 
-    </select> <br><br>    
-    <label for="Languange">Languange Spoken</label><br><br>
-    <input type="checkbox" name="bahasa1" value="Bahasa Indonesia">Bahasa Indonesia <br>
-    <input type="checkbox" name="bahasa2" value="Bahasa Inggris">Bahasa Inggris <br>
-    <input type="checkbox" name="bahasa3" value="Bahasa Cina">Bahasa Cina <br><br>
+    <label class="text-xl">Languange Spoken</label>
+    <div class="max-w-48" >
+        <br>
+        <input type="checkbox"  class="checkbox checkbox-xs" name="bahasa1" value="Bahasa Indonesia"> Bahasa Indonesia <br>
+        <input type="checkbox"  class="checkbox checkbox-xs" name="bahasa2" value="Bahasa Inggris"> Bahasa Inggris <br>
+        <input type="checkbox"  class="checkbox checkbox-xs" name="bahasa3" value="Bahasa Cina"> Bahasa Cina <br><br>
+    </div>
 
-    <label for="Bio">Bio</label><br><br>    
-    <textarea name="bio" id="bio" cols="30" rows="10" required ></textarea> <br><br>
-        <button>Sign In</button>
+        <label for="Bio">Bio</label><br><br>    
+        <textarea placeholder ="Bio" class= "textarea textarea-bordered textarea-lg w-full max-w-xs" name="bio" required></textarea> <br><br>
+        <button class="btn btn-outline">Sign In</button>
+        </div>
+    </div>
 </form>
 </body>
 </html>
