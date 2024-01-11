@@ -11,7 +11,8 @@
     <?php
         $Bahasa = $_POST ['bahasa']
     ?>
-    <h1 class ="text-4xl">SELAMAT DATANG!!!!</h1><br>
+    <h1 class ="text-4xl flex justify-center">SELAMAT DATANG!!!!</h1><br>
+    <div class="flex justify-center ">
     <table class="border-collapse border border-slate-400">
         <tr>
             <td class="border border-slate-400">
@@ -46,6 +47,8 @@
     
     </table>
         <br><br>
-    <h2>Terima kasih telah bergabung di website kami. Media belajar kita bersama</h2>
+    </div>
+    <br>
+    <h2 class="flex justify-center">Terima kasih telah bergabung di website kami. Media belajar kita bersama</h2>
 </body>
 </html>
